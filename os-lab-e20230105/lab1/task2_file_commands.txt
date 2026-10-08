@@ -1,0 +1,10 @@
+/home/gic-sun-sovisal/oslab-work/lab1/task2_files
+river.txt
+stone.txt
+This is file river
+This is file stone
+river.txt
+river_copy.txt
+stone_renamed.txt
+river.txt
+stone_renamed.txt
