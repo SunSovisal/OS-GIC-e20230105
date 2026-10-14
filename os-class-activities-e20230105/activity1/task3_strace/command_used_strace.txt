@@ -1,0 +1,13 @@
+# Task 3 — Commands used (strace analysis)
+
+# Step 1 — Trace file creator (Task 1 Part A)
+strace -e trace=openat,read,write,close ./file_creator_lib 2> strace_lib_task1.txt
+strace -e trace=openat,read,write,close ./file_creator_sys 2> strace_sys_task1.txt
+
+# Step 2 — Trace file reader (Task 1 Part B)
+strace -e trace=openat,read,write,close ./file_reader_lib 2> strace_lib_reader.txt
+strace -e trace=openat,read,write,close ./file_reader_sys 2> strace_sys_reader.txt
+
+# Step 3 — System call summary counts
+strace -c ./file_creator_lib 2> strace_summary_lib.txt
+strace -c ./file_creator_sys 2> strace_summary_sys.txt

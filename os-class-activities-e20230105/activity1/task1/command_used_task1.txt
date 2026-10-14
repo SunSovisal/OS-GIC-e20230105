@@ -1,0 +1,19 @@
+# Task 1 — Commands used (File Creator & Reader)
+
+# Part A — File Creator (library version)
+gcc -o file_creator_lib file_creator_lib.c
+./file_creator_lib
+cat output.txt
+
+# Part A — File Creator (system call version)
+gcc -o file_creator_sys file_creator_sys.c
+./file_creator_sys
+cat output.txt
+
+# Part B — File Reader (library version)
+gcc -o file_reader_lib file_reader_lib.c
+./file_reader_lib
+
+# Part B — File Reader (system call version)
+gcc -o file_reader_sys file_reader_sys.c
+./file_reader_sys
