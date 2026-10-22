@@ -1,0 +1,6 @@
+reports/payroll may.txt
+reports/README.txt
+reports/tax summary.txt
+TechCorp/Audit/archive/first-original.txt
+TechCorp/Audit/payroll may.txt
+TechCorp/Audit/tax summary.txt

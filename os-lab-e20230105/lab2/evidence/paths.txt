@@ -1,0 +1,29 @@
+Step 1
+pwd
+cd incoming/
+mv "$file1" ../reports/
+
+Step 2
+pwd
+cd "$OSLAB_WORKSPACE/lab2/"
+mv "OSLAB_WORKSPACE/lab2/incoming/$file2" "OSLAB_WORKSPACE/lab2/reports/"
+
+Step 3
+pwd
+cp "reports/$file1" "reports/$file2"  "TechCorp/$owner/"
+
+Step 4
+pwd
+cd "reports/$file1" "TechCorp/$owner/achive/first-original.txt"
+
+Step 5
+pwd 
+cd "/home/gic-sun-sovisal/oslab-work/lab2/TechCorp/Engineering"
+cat "../Audit/$file1"
+cat "/home/gic-sun-sovisal/oslab-work/lab2/TechCorp/$Audit/payroll may.txt"
+
+Step 6 
+I use relative paths because I were already in the lab folder. Absolute path is better when the command must mean the same place after you cd somewhere else.
+
+Error: cat: 'reports/payroll may.txt': No such file or directory
+Fix: ../../reports/payroll may.txt
