@@ -1,0 +1,11 @@
+total 36
+drwxrwxr-x 3 gic-sun-sovisal gic-sun-sovisal  4096 Oct 24 12:44 .
+drwxrwxr-x 4 gic-sun-sovisal gic-sun-sovisal  4096 Oct 21 10:31 ..
+-rwxrwxr-x 1 gic-sun-sovisal gic-sun-sovisal 16392 Oct 24 12:41 forkchild
+-rw-rw-r-- 1 gic-sun-sovisal gic-sun-sovisal  1431 Oct 24 12:40 forkchild.c
+-rw-rw-r-- 1 gic-sun-sovisal gic-sun-sovisal     0 Oct 24 12:47 result_forkchild.txt
+drwxrwxr-x 2 gic-sun-sovisal gic-sun-sovisal  4096 Oct 21 10:31 task1
+Parent process (PID: 885774) — creating child...
+Parent: waiting for child (PID: 885775) to finish...
+Parent: child exited with status 0
+Parent: done.

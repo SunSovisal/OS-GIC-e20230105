@@ -1,0 +1,20 @@
+  628  rmdir task2
+  629  cd ..
+  630  ls
+  631  rmdir task2
+  632  mkdir task3
+  633  cd task3
+  634  tree
+  635  ls
+  636  cd ../
+  637  rmdir task3
+  638  mkdir task3_shm
+  639  cd task3_shm/
+  640  nano shm-producer.c 
+  641  nano shm-consumer.c
+  642  gcc -o shm-producer shm-producer.c -lrt
+  643  gcc -o shm-consumer shm-consumer.c -lrt
+  644  ./shm-producer
+  645  ./shm-consumer > result-shm-ipc.txt
+  646  cat result-shm-ipc.txt 
+  647  history | tail -n 20 > command_used_shm.txt

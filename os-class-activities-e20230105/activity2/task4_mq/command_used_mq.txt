@@ -1,0 +1,20 @@
+  643  gcc -o shm-consumer shm-consumer.c -lrt
+  644  ./shm-producer
+  645  ./shm-consumer > result-shm-ipc.txt
+  646  cat result-shm-ipc.txt 
+  647  history | tail -n 20 > command_used_shm.txt
+  648  cat command_used_shm.txt 
+  649  cd ..
+  650  tree
+  651  mkdir task4_mq
+  652  nano common.h
+  653  nano sender.c
+  654  nano receiver.c
+  655  gcc -o sender sender.c -lrt
+  656  gcc -o receiver receiver.c -lrt
+  657  ./sender
+  658  ./receiver > result-mq-ipc.txt
+  659  cat result-mq-ipc.txt 
+  660  gcc -o sender sender.c -lrt
+  661  gcc -o receiver receiver.c -lrt
+  662  history | tail -n 20 > command_used_mq.txt
