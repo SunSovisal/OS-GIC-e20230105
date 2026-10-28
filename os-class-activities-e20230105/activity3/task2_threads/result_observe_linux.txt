@@ -1,0 +1,30 @@
+$ ps -eLf | grep threads_observe
+UID            PID     LWP NLWP STAT CMD
+ubuntu      131896  131896    5 S    ./threads_observe
+ubuntu      131896  131898    5 S    ./threads_observe
+ubuntu      131896  131899    5 S    ./threads_observe
+ubuntu      131896  131900    5 S    ./threads_observe
+ubuntu      131896  131901    5 S    ./threads_observe
+
+$ ps -T -p 131896
+    PID    SPID STAT CMD
+ 131896  131896 S    ./threads_observe
+ 131896  131898 S    ./threads_observe
+ 131896  131899 S    ./threads_observe
+ 131896  131900 S    ./threads_observe
+ 131896  131901 S    ./threads_observe
+
+--- /proc/131896/task/ listing ---
+131896
+131898
+131899
+131900
+131901
+
+$ ps -L -o pid,lwp,nlwp,psr,stat,comm -p 131896
+    PID     LWP NLWP PSR STAT COMMAND
+ 131896  131896    5   2 S    threads_observe
+ 131896  131898    5   4 S    threads_observe
+ 131896  131899    5   1 S    threads_observe
+ 131896  131900    5   3 S    threads_observe
+ 131896  131901    5   1 S    threads_observe

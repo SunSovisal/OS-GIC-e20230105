@@ -189,18 +189,18 @@ Only `pool-1-thread-1` and `pool-1-thread-2` ran the six tasks. A new task start
 
 ### Linux — `ps -eLf` Output
 
-The saved view is `htop` with threads shown (`H`). The PID column is the thread ID (the same value `ps` prints as LWP). From `screenshots/task4_htop_threads.png`:
+Saved in `task2_threads/result_observe_linux.txt`. The same five threads are in `screenshots/task4_htop_threads.png`. Every row has PID 131896 and `NLWP` 5. The LWP values are the thread IDs:
 
 ```
-NLWP  CPU  PID      USER     S  Command
-5     2    131896   ubuntu   S  ./threads_observe    (main thread)
-5     4    131898   ubuntu   S  ./threads_observe
-5     1    131899   ubuntu   S  ./threads_observe
-5     3    131900   ubuntu   S  ./threads_observe
-5     1    131901   ubuntu   S  ./threads_observe
+  PID     LWP NLWP PSR STAT COMMAND
+131896  131896    5   2 S    threads_observe
+131896  131898    5   4 S    threads_observe
+131896  131899    5   1 S    threads_observe
+131896  131900    5   3 S    threads_observe
+131896  131901    5   1 S    threads_observe
 ```
 
-All five rows share one process. The main thread ID equals the PID, 131896. The other four IDs are the workers.
+`/proc/131896/task/` lists those same five IDs. The main thread ID equals the PID, 131896.
 
 ### Linux — htop Thread View
 
@@ -214,7 +214,7 @@ This second capture is another run of `./threads_observe`, not the `kthreadd` tr
 
 ### Linux — Kernel Threads (commands)
 
-There is no saved `ps -L` / `ps --ppid 2` terminal capture. The thread list above is the `htop` view of the same facts: five threads, `NLWP` 5, and the main thread ID equal to the PID.
+`ps -L -o pid,lwp,nlwp,psr,stat,comm -p 131896` is in `task2_threads/result_observe_linux.txt`. It shows `NLWP` 5 and the main thread ID equal to the PID. `ps --ppid 2` is not in that file. The htop capture below is still `./threads_observe`, so `kthreadd` is not in the saved screenshot.
 
 ### Windows — Task Manager
 
