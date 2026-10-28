@@ -1,0 +1,30 @@
+   95  cd task3_java/
+   96  nano ThreadDemo.java
+   97  javac ThreadDemo.java
+   98  java ThreadDemo > result_thread_demo.txt 2>&1
+   99  cat result_thread_demo.txt
+  100  nano RunnableDemo.java
+  101  java RunnableDemo.java
+  102  java RunnableDemo > result_runnable_demo.txt 2>&1
+  103  cat result_runnable_demo.txt
+  104  ls
+  105  cat result_runnable_demo.txt 
+  106  rm RunnableDemo.java 
+  107  rm result_runnable_demo.txt 
+  108  ls
+  109  nano RunnableDemo.java
+  110  $ javac RunnableDemo.java
+  111  $ java RunnableDemo > result_runnable_demo.txt 2>&1
+  112  $ cat result_runnable_demo.txt
+  113  ls
+  114  cat result_runnable_demo.txt
+  115  javac RunnableDemo.java
+  116  java RunnableDemo > result_runnable_demo.txt 2>&1
+  117  at result_runnable_demo.txt
+  118  cat result_runnable_demo.txt
+  119  nano PoolDemo.java
+  120  javac PoolDemo.java
+  121  java PoolDemo > result_pool_demo.txt 2>&1
+  122  cat result_pool_demo.txt
+  123  $ history | tail -n 30 > command_used_java.txt
+  124  history | tail -n 30 > command_used_java.txt

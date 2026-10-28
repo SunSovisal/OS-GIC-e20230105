@@ -1,0 +1,20 @@
+   72  ls
+   73  mkdir activity3
+   74  cd activity
+   75  cd activity3
+   76  mkdir task1_socket
+   77  cd task1_socket/
+   78  pwd
+   79  nano server.c
+   80  nano client.c
+   81  la
+   82  ls
+   83  gcc -o server server.c
+   84  ./server
+   85  ./server > result_server.txt 2>&1 &
+   86  sleep 1
+   87  ./client > result_client.txt 2>&1
+   88  wait
+   89  cat result_server.txt result_client.txt > result_socket.txt
+   90  $ history | tail -n 20 > command_used_socket.txt
+   91  history | tail -n 20 > command_used_socket.txt
