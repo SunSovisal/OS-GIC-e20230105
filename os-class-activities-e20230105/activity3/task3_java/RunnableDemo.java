@@ -14,7 +14,7 @@ public class RunnableDemo {
                 System.out.printf("[%s] Step %d (Thread: %s, ID: %d)%n",
                     taskName, i, Thread.currentThread().getName(), Thread.currentThread().getId());
                 try {
-                    Thread.sleep(300);
+                    Thread.sleep(5000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
