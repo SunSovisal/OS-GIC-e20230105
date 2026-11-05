@@ -1,0 +1,10 @@
+18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 10 Nov  5 07:46 hard.txt
+18743724 lrwxrwxrwx 1 gic-sun-sovisal gic-sun-sovisal 10 Nov  5 07:54 soft.txt -> source.txt
+18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 10 Nov  5 07:46 source.txt
+cat: soft.txt: No such file or directory
+18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 10 Nov  5 07:46 hard.txt
+18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 10 Nov  5 07:46 renamed.txt
+18743732 lrwxrwxrwx 1 gic-sun-sovisal gic-sun-sovisal 11 Nov  5 07:58 soft.txt -> renamed.txt
+renamed.txt
+version 1
+version 1
