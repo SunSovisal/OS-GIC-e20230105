@@ -1,4 +1,9 @@
-18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 10 Nov  5 07:46 hard.txt
-18743740 -rw-rw-r-- 1 gic-sun-sovisal gic-sun-sovisal 10 Nov  5 07:59 source.txt
-version 2
-version 1
+
+=== NEW FILE USING THE OLD NAME ===
+18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 12 Nov  6 07:44 silver-backup.txt
+18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 12 Nov  6 07:44 silver-hard.txt
+18752042 lrwxrwxrwx 1 gic-sun-sovisal gic-sun-sovisal 10 Nov  6 07:46 silver-soft.txt -> silver.txt
+18752044 -rw-rw-r-- 1 gic-sun-sovisal gic-sun-sovisal 12 Nov  6 07:46 silver.txt
+silver.txt: version 770
+hard: version 760
+soft: version 770

@@ -1,10 +1,25 @@
-18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 10 Nov  5 07:46 hard.txt
-18743724 lrwxrwxrwx 1 gic-sun-sovisal gic-sun-sovisal 10 Nov  5 07:54 soft.txt -> source.txt
-18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 10 Nov  5 07:46 source.txt
-cat: soft.txt: No such file or directory
-18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 10 Nov  5 07:46 hard.txt
-18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 10 Nov  5 07:46 renamed.txt
-18743732 lrwxrwxrwx 1 gic-sun-sovisal gic-sun-sovisal 11 Nov  5 07:58 soft.txt -> renamed.txt
-renamed.txt
-version 1
-version 1
+
+=== BEFORE RENAME ===
+18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 12 Nov  6 07:44 silver-hard.txt
+18752042 lrwxrwxrwx 1 gic-sun-sovisal gic-sun-sovisal 10 Nov  6 07:46 silver-soft.txt -> silver.txt
+18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 12 Nov  6 07:44 silver.txt
+hard: version 760
+soft: version 760
+stored target: silver.txt
+
+=== AFTER RENAME, BEFORE REPAIR ===
+18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 12 Nov  6 07:44 silver-backup.txt
+18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 12 Nov  6 07:44 silver-hard.txt
+18752042 lrwxrwxrwx 1 gic-sun-sovisal gic-sun-sovisal 10 Nov  6 07:46 silver-soft.txt -> silver.txt
+hard: version 760
+stored target: silver.txt
+soft: cat: silver-soft.txt: No such file or directory
+
+=== AFTER REPAIR ===
+18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 12 Nov  6 07:44 silver-backup.txt
+18743633 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 12 Nov  6 07:44 silver-hard.txt
+18752042 lrwxrwxrwx 1 gic-sun-sovisal gic-sun-sovisal 17 Nov  6 07:48 silver-soft.txt -> silver-backup.txt
+stored target: silver-backup.txt
+hard: version 760
+soft: version 760
+Decision: I stored a relative target, silver-backup.txt, because the link and the report are in the same folder. An absolute path would still point at the old location after the whole lab folder was moved.

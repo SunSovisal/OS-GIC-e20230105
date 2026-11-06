@@ -1,0 +1,7 @@
+After one.txt, two.txt, and three.txt were created, every name showed link count 3.
+
+After rm one.txt, two.txt and three.txt showed link count 2. cat two.txt still printed "keep me", so the data was still there.
+
+After rm two.txt, three.txt showed link count 1 and still printed "keep me".
+
+After rm three.txt, no name was left. The data is gone only when the last name is removed and the link count reaches 0.
