@@ -1,0 +1,12 @@
+.:
+total 8
+18752102 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal   24 Nov  6 08:00 garden-final.txt
+18752101 drwxrwxr-x 2 gic-sun-sovisal gic-sun-sovisal 4096 Nov  6 08:07 links
+
+links:
+total 4
+18752103 lrwxrwxrwx 1 gic-sun-sovisal gic-sun-sovisal 19 Nov  6 08:07 first.txt -> ../garden-final.txt
+18752102 -rw-rw-r-- 2 gic-sun-sovisal gic-sun-sovisal 24 Nov  6 08:00 hard.txt
+18752107 lrwxrwxrwx 1 gic-sun-sovisal gic-sun-sovisal  9 Nov  6 08:01 second.txt -> first.txt
+checkpoint maple garden
+checkpoint maple garden

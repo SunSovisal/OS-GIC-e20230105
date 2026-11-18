@@ -1,0 +1,8 @@
+status,count
+shipped,4
+sent,1
+shipped,6
+shipped-late,31
+shipped,7
+sent,4
+cat: data/not-present.csv: No such file or directory
